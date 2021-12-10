@@ -1,0 +1,36 @@
+GET http://localhost:3003/api/user/
+Authorization: Bearer 1|LZYFIsGW39HiSsXRl9iJSppb93GE8oEeeY3DXu5A
+Content-Type: application/json
+Accept: application/json
+
+###
+# GET http://localhost:3003/api/user/jobs
+GET http://localhost:3003/api/user/jobs?page=2
+# GET http://localhost:3003/api/user/jobs?from_date=24-12-2021&to_date=30-12-2021
+Authorization: Bearer 1|LZYFIsGW39HiSsXRl9iJSppb93GE8oEeeY3DXu5A
+Content-Type: application/json
+Accept: application/json
+
+###
+# GET http://localhost:3003/api/user/orders
+GET http://localhost:3003/api/user/orders?from_date=24-12-2021&to_date=30-12-2021
+Authorization: Bearer 1|LZYFIsGW39HiSsXRl9iJSppb93GE8oEeeY3DXu5A
+Content-Type: application/json
+Accept: application/json
+
+###
+
+
+GET http://localhost:3003/api/user/jobs/1
+Authorization: Bearer 1|LZYFIsGW39HiSsXRl9iJSppb93GE8oEeeY3DXu5A
+Content-Type: application/json
+Accept: application/json
+
+###
+
+GET http://localhost:3003/api/user/logout
+Authorization: Bearer 1|LZYFIsGW39HiSsXRl9iJSppb93GE8oEeeY3DXu5A
+Content-Type: application/json
+Accept: application/json
+
+###

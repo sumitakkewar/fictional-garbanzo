@@ -1,0 +1,9 @@
+created:
+    - database/factories/JobsFactory.php
+    - database/migrations/2021_12_07_173146_create_jobs_table.php
+    - app/Models/Jobs.php
+models:
+    User: { name: string, email: string, email_verified_at: 'datetime nullable', password: string, remember_token: 'string:100 nullable' }
+    Service: { name: 'string:255', status: 'enum:active,inactive' }
+    ServicePersonnel: { serviceId: 'id foreign:services.id', userId: 'id foreign:users.id', status: 'enum:active,inactive' }
+    Jobs: { service_user_id: 'id foreign:service_user.id', user_id: 'id foreign:users.id', scheduled_time: timestamp, desc: longtext, latitude: string, longitude: string, address: longtext }

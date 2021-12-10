@@ -1,0 +1,29 @@
+GET http://localhost:3003/api/service
+Authorization: Bearer 2|xjpgXr99GBLyX3DAzMRbhTiSiINDSTVbudHjzHZQ
+Content-Type: application/json
+Accept: application/json
+
+###
+
+GET http://localhost:3003/api/service/2
+Authorization: Bearer 2|xjpgXr99GBLyX3DAzMRbhTiSiINDSTVbudHjzHZQ
+Content-Type: application/json
+Accept: application/json
+
+###
+
+POST http://localhost:3003/api/service/book
+Authorization: Bearer 2|xjpgXr99GBLyX3DAzMRbhTiSiINDSTVbudHjzHZQ
+Content-Type: application/json
+Accept: application/json
+
+{
+    "service_user_id" : 3,
+    "scheduled_time" : "12-12-2021",
+    "desc" : "LOREM EPSUM, LOREM EPSUM, LOREM EPSUM, LOREM EPSUM, LOREM EPSUM...",
+    "address" : "ADDRESS OF USER",
+    "longitude" : "21.839489",
+    "latitude": "79.783488"
+}
+
+###

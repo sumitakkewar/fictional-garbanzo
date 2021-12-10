@@ -1,0 +1,18 @@
+models:
+  # ...
+  Jobs:
+    service_user_id: id foreign:service_user.id
+    user_id: id foreign:users.id
+    scheduled_time: timestamp
+    desc: longtext
+    latitude: string
+    longitude: string
+    address: longtext
+
+controllers:
+  # ...
+  # Service:
+  #   index:
+  #     query: all
+  #     render: service.index with:services
+

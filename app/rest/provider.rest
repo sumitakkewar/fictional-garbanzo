@@ -1,0 +1,22 @@
+
+POST http://localhost:3003/api/provider/register
+Authorization: Bearer 1|LZYFIsGW39HiSsXRl9iJSppb93GE8oEeeY3DXu5A
+Content-Type: application/json
+Accept: application/json
+
+{
+    "serviceId" : 2
+}
+
+###
+
+POST http://localhost:3003/api/provider/deregister
+Authorization: Bearer 1|LZYFIsGW39HiSsXRl9iJSppb93GE8oEeeY3DXu5A
+Content-Type: application/json
+Accept: application/json
+
+{
+    "serviceId" : 1
+}
+
+###
