@@ -31,19 +31,19 @@ This Command will start application on local server
 - http://localhost:3003/ points to Backend
 - http://localhost:3004/ points to Frontend
 
-#### *Important Note:* FrontEnd wont work here due to not poiting API_URL to correct container. follow below steps to connect FrontEnd
-1. docker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' service_portal_nginx 
-    (take the output of this command and replace in .env with <docker-container-ip>)
+#### *Important Note:* Front-End wont work here due to not pointing API_URL to correct container. follow below steps to connect Front-End
+1. ```bashdocker inspect -f '{{range.NetworkSettings.Networks}}{{.IPAddress}}{{end}}' service_portal_nginx```
+(take the output of this command and replace in .env with <docker-container-ip>)
 2. ```bash docker-compose stop```
 3. ```bash docker-compose start```
 
 Above steps will be perfomed when there is change in ENV file.
 
 ### 4. Migration and Seeding
-- php artisan db:wipe (just in case)
-- php artisan migrate 
-- php artisan db:seed This will populated Users and Services Tables with Data
-- php artisan cache:clear (just in case)
+- ```bashphp artisan db:wipe``` (just in case)
+- ```bashphp artisan migrate``` 
+- ```bashphp artisan db:seed``` This will populated Users and Services Tables with Data
+- ```bashphp artisan cache:clear``` (just in case)
 
 *Note:* To run these command please open docker cotainer => ```bash docker exec -it service_portal_php bash```, Run this command in terminal, after all docker container started.
 
