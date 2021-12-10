@@ -45,6 +45,8 @@ Above steps will be perfomed when there is change in ENV file.
 - php artisan db:seed This will populated Users and Services Tables with Data
 - php artisan cache:clear (just in case)
 
+*Note:* To run these command please open docker cotainer => ```bash docker exec -it service_portal_php bash```, Run this command in terminal, after all docker container started.
+
 ### 5. Testing
 - Test User 1:
     Username: *provider@test.com*
