@@ -3,12 +3,11 @@ app/app/.env
 
 frontend/.DS_Store
 frontend/node_modules
-frontend//dist
+frontend/dist
 
 
 # local env files
-frontend/.env.local
-frontend/.env.*.local
+frontend/.env
 
 # Log files
 frontend/npm-debug.log*
